@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 /* Braces force the whole library to be loaded into the bundle. */
-import { NavigationDrawer } from 'react-md/lib/NavigationDrawers'
+import { NavigationDrawer } from 'react-md/lib/NavigationDrawers';
 import './theme.global.scss';
-
-const store = getStore();
 
 
 const App = () => (
@@ -17,7 +15,5 @@ const App = () => (
 );
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <App />,
   document.getElementById('root'));
